@@ -102,7 +102,7 @@ function BookingSystem() {
             </Form.Control.Feedback>
           </Form.Group>
           <Form.Group as={Col} md="3" controlId="validationCustom07">
-            <Form.Label>Event Type</Form.Label>
+            <Form.Label>ContactType</Form.Label>
             <Form.Control
               type="text"
               placeholder="How to contact you? (Email,Text,Call)"
