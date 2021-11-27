@@ -13,8 +13,8 @@ cursor: pointer;
 
 `;
 export const NavItems = styled.ul`
-justify-content:center;
-align-items:center;
+
+
 display:flex;
 list-style-type:none;
 cursor: pointer;
