@@ -14,9 +14,6 @@ import styled from "styled-components";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { HiMenuAlt3, HiLockClosed } from "react-icons/hi";
 import { AiOutlineClose } from "react-icons/ai";
-import { BsFillQuestionCircleFill } from "react-icons/bs";
-import { GiHouse } from "react-icons/gi";
-import { MdEmail } from "react-icons/md";
 import { Container } from "react-bootstrap";
 import { Link } from "react-scroll";
 function Header() {

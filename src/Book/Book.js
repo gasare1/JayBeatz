@@ -6,8 +6,6 @@ import {
   MDBCardBody,
   MDBCardTitle,
   MDBCardText,
-  MDBCardImage,
-  MDBBtn,
 } from "mdb-react-ui-kit";
 import image from "../Components/Images/studiocard.jpeg";
 import "bootstrap/dist/css/bootstrap.min.css";
