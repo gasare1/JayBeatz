@@ -85,7 +85,10 @@ function BookingSystem() {
               Please provide a valid zip.
             </Form.Control.Feedback>
           </Form.Group>
-          <Form.Group as={Col} md="3" controlId="validationCustom06">
+          
+        </Row>
+        <Row>
+        <Form.Group as={Col} md="3" controlId="validationCustom06">
             <Form.Label>Select Date</Form.Label>
             <Form.Control type="date" name="date" placeholder="Date of Event" />
           </Form.Group>
