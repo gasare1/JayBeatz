@@ -27,7 +27,7 @@ function Header() {
     color: ${navBackground ? "black" : "white"};
     justify-content: space-between;
 
-    margin-left: 10rem;
+    margin-left: 12rem;
     text-decoration: none;
     &:hover {
       color: lightblue;

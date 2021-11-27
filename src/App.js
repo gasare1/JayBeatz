@@ -4,9 +4,11 @@ import Homes from "./Components/Home/Homes";
 import About from "./Components/About/About";
 import Collab from "./Components/Collab/Collab";
 import Book from "./Book/Book";
-import {useEffect} from 'react'
+import { useEffect } from "react";
+
 import AOS from "aos";
-import './footer.css'
+import "aos/dist/aos.css";
+import "./footer.css";
 function App() {
   useEffect(() => {
     AOS.init();
@@ -19,7 +21,7 @@ function App() {
       <About path="about" component={About} exact />
       <Collab path="collab" component={Collab} exact />
       <Book path="book" component={Book} exact />
-      <div class="copyright text-center" style={{background:'gray'}}>
+      <div class="copyright text-center" style={{ background: "gray" }}>
         Copyright &copy; 2021 <span>JayBeatz All Rights Reserved</span>
       </div>
     </Router>
