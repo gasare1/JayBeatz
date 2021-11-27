@@ -48,6 +48,7 @@ function Header() {
     color: white;
     margin-bottom: 99px;
     transition: 1s ease;
+    height:500px;
     background-color: ${navBackground ? "white" : "transparent"};
   `;
   const NavLogo = styled.h1`
@@ -201,17 +202,17 @@ function Header() {
                 to="/"
                 style={{
                   textDecoration: "none",
-                  color: "#fff",
+                  color: "#fff",marginTop:'100px'
                 }}
               >
-                <GiHouse /> Home
+                 Home
               </Link>
             </MenuButton>
             <MenuButton>
               <Link
                 duration={1000}
                 to="about"
-                style={{ textDecoration: "none", color: "#fff" }}
+                style={{ textDecoration: "none", color: "#fff",marginTop:'20px' }}
               >
                 {" "}
                 About/Works
@@ -222,9 +223,9 @@ function Header() {
                 duration={1000}
                 to="collab"
                 spy={true}
-                style={{ textDecoration: "none", color: "#fff" }}
+                style={{ textDecoration: "none", color: "#fff",marginTop:'20px' }}
               >
-                <MdEmail />
+                
                 Collaborate
               </Link>
             </MenuButton>
@@ -233,9 +234,9 @@ function Header() {
                 duration={1000}
                 to="book"
                 spy={true}
-                style={{ textDecoration: "none", color: "#fff" }}
+                style={{ textDecoration: "none", color: "#fff",marginTop:'20px' }}
               >
-                <MdEmail />
+                
                 Book
               </Link>
             </MenuButton>

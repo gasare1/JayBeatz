@@ -10,7 +10,7 @@ background:no-repeat center center fixed;
   z-index: -1;
   margin-top: -6rem;
   @media screen and (max-width: 768px) {
-    margin-top: -35rem;
+    margin-top: -45rem;
    
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -20,7 +20,7 @@ background:no-repeat center center fixed;
 `;
 export const HomeH1 = styled.div `
 z-index:1;
-margin-bottom:-50px;
+margin-bottom:50px;
 justify-content:center;
 text-align:center;
 display:flex
