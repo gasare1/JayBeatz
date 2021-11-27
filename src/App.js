@@ -4,8 +4,14 @@ import Homes from "./Components/Home/Homes";
 import About from "./Components/About/About";
 import Collab from "./Components/Collab/Collab";
 import Book from "./Book/Book";
+import {useEffect} from 'react'
+import AOS from "aos";
 import './footer.css'
 function App() {
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
   return (
     <Router>
       <Header />

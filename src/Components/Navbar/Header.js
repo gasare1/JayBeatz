@@ -225,12 +225,13 @@ function Header() {
                 duration={1000}
                 to="book"
                 spy={true}
-                style={{ textDecoration: "none", ccolor: "#fff" }}
+                style={{ textDecoration: "none", color: "#fff" }}
               >
-                <BsFillQuestionCircleFill />
-                Book Me
+                <MdEmail />
+                Book
               </Link>
             </MenuButton>
+            
           </Menu>
         </Content>
       </MobileMenu>

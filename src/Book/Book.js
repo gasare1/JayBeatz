@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import { BookBg } from "./BookElements";
+import { BookBg,BookCard } from "./BookElements";
 import {
   MDBCard,
   MDBCardBody,
@@ -17,6 +17,7 @@ import BookingSystem from "./BookingSystem";
 function Book() {
   return (
     <BookBg id='book' style={{ backgroundImage: `url(${studio})` }}>
+      <BookCard>
       <MDBCard
         style={{ width: "60vw", marginTop: "10rem" }}
         className="shadow-lg p-3 mb-5 bg-white rounded"
@@ -43,6 +44,7 @@ function Book() {
         <BookingSystem />
         <MDBCardBody></MDBCardBody>
       </MDBCard>
+      </BookCard>
     </BookBg>
   );
 }

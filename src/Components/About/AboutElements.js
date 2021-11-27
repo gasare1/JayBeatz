@@ -14,13 +14,13 @@ export const AboutBg = styled.div`
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 180vh;
+  height: auto;
   z-index: -1;
   justify-content:center;
   align-items:center;
   display:flex;
   @media screen and (max-width: 768px) {
-    height: 10vh;
+    height: auto;
     width:100vw;
     -webkit-background-size: cover;
     -moz-background-size: cover;

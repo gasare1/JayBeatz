@@ -8,7 +8,7 @@ background:no-repeat center center fixed;
   background-size: cover;
   height: 100vh;
   z-index: -1;
-  margin-top: -15rem;
+  margin-top: -6rem;
   @media screen and (max-width: 768px) {
     margin-top: -35rem;
    
@@ -18,3 +18,12 @@ background:no-repeat center center fixed;
     background-size: cover;
   }
 `;
+export const HomeH1 = styled.div `
+z-index:1;
+margin-bottom:-50px;
+justify-content:center;
+text-align:center;
+display:flex
+
+
+`
