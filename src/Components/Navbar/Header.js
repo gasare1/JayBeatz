@@ -50,6 +50,14 @@ function Header() {
     transition: 1s ease;
     background-color: ${navBackground ? "white" : "transparent"};
   `;
+  const NavLogo = styled.h1`
+  font-family: 'Comforter', cursive;
+  cursor: pointer;
+  color: ${navBackground ? "black" : "white"};
+  &:hover {
+      color: lightblue;
+    }
+  `;
   const MobileMenu = styled.div`
     margin-top: 200px;
     padding-top: 50px;

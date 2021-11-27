@@ -1,6 +1,6 @@
 import React from "react";
 import { Home, HomeH1 } from "./HomeElements";
-import image from "../Images/jay.beatz.jpg";
+import image from "../Images/djmainback.jpg";
 function Homes() {
     
   return (
