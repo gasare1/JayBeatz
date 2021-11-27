@@ -9,12 +9,15 @@ export const NavMenu = styled.div`
 `;
 export const NavLogo = styled.h1`
 font-family: 'Comforter', cursive;
+cursor: pointer;
+
 `;
 export const NavItems = styled.ul`
 justify-content:center;
 align-items:center;
 display:flex;
 list-style-type:none;
+cursor: pointer;
 @media screen and (max-width: 992px) {
     display:none;
   }

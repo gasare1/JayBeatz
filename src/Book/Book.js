@@ -16,7 +16,7 @@ import { Button } from "react-bootstrap";
 import BookingSystem from "./BookingSystem";
 function Book() {
   return (
-    <BookBg style={{ backgroundImage: `url(${studio})` }}>
+    <BookBg id='book' style={{ backgroundImage: `url(${studio})` }}>
       <MDBCard
         style={{ width: "60vw", marginTop: "10rem" }}
         className="shadow-lg p-3 mb-5 bg-white rounded"

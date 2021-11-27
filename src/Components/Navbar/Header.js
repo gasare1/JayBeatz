@@ -11,7 +11,6 @@ import {
 } from "./HeaderElements";
 import React, { useState, useRef, useEffect } from "react";
 import styled from "styled-components";
-import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { HiMenuAlt3, HiLockClosed } from "react-icons/hi";
 import { AiOutlineClose } from "react-icons/ai";
@@ -19,6 +18,7 @@ import { BsFillQuestionCircleFill } from "react-icons/bs";
 import { GiHouse } from "react-icons/gi";
 import { MdEmail } from "react-icons/md";
 import { Container } from "react-bootstrap";
+import { Link } from "react-scroll";
 function Header() {
   const [navBackground, setNavBackground] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
@@ -74,6 +74,7 @@ function Header() {
     height: 90px;
     overflow: hidden;
     position: relative;
+    caret-color:'transparent';
     box-shadow: ${navBackground ? "0 3px 10px rgb(0 0 0 / 0.2)" : ""};
     overflow: hidden;
   `;
@@ -112,7 +113,7 @@ function Header() {
           top: "0",
         }}
       >
-        <NavLogo >JayBeatz</NavLogo>
+        <Link to='/'><NavLogo >JayBeatz</NavLogo></Link>
         <Collapse isOpen={isOpen} navbar>
           <NavToggle style={{transition: "5s ease"}}>
             {isOpen ? (
@@ -133,7 +134,7 @@ function Header() {
               Home
             </NavLinks>
             <NavLinks
-              to="/"
+              to="about"
               style={{
                 fontFamily: "'Montserrat', sans-serif",
                 fontWeight: "bolder",
@@ -142,7 +143,7 @@ function Header() {
               About/Works
             </NavLinks>
             <NavLinks
-              to="/"
+              to="collab"
               style={{
                 fontFamily: "'Montserrat', sans-serif",
                 fontWeight: "bolder",
@@ -151,7 +152,7 @@ function Header() {
               Collaborate
             </NavLinks>
             <NavLinks
-              to="/"
+              to="book"
               style={{
                 fontFamily: "'Montserrat', sans-serif",
                 fontWeight: "bolder",
@@ -189,7 +190,7 @@ function Header() {
             <MenuButton>
               <Link
                 duration={1000}
-                to="home"
+                to="/"
                 style={{
                   textDecoration: "none",
                   color: "#fff",
@@ -201,7 +202,7 @@ function Header() {
             <MenuButton>
               <Link
                 duration={1000}
-                to="contact"
+                to="about"
                 style={{ textDecoration: "none", color: "#fff" }}
               >
                 {" "}
@@ -211,7 +212,7 @@ function Header() {
             <MenuButton>
               <Link
                 duration={1000}
-                to="maillist"
+                to="collab"
                 spy={true}
                 style={{ textDecoration: "none", color: "#fff" }}
               >
@@ -222,7 +223,7 @@ function Header() {
             <MenuButton>
               <Link
                 duration={1000}
-                to="news"
+                to="book"
                 spy={true}
                 style={{ textDecoration: "none", ccolor: "#fff" }}
               >

@@ -13,7 +13,7 @@ import image from "../Images/jay.beatz2.jpg";
 import "bootstrap/dist/css/bootstrap.min.css"
 function About() {
   return (
-    <AboutBg>
+    <AboutBg id="about">
       <MDBCard style={{ width: "60vw" }} className="shadow-lg p-3 mb-5 bg-white rounded">
         <MDBCardImage src={image} position="top" alt="..." />
         <MDBCardBody>

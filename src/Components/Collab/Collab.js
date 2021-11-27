@@ -15,7 +15,7 @@ import studio from "../Images/studio.jpeg";
 import { Button } from "react-bootstrap";
 function Collab() {
   return (
-    <CollabBg style={{ backgroundImage: `url(${studio})` }}>
+    <CollabBg style={{ backgroundImage: `url(${studio})` }} id="collab">
       <MDBCard
         style={{ width: "60vw", marginTop: "10rem" }}
         className="shadow-lg p-3 mb-5 bg-white rounded"
@@ -42,7 +42,7 @@ function Collab() {
             bulk of the card's content.
           </MDBCardText>
           <Container style={{justifyContent:'center',alignItems:'center',display:'flex'}}>
-            <Button variant="outline-primary" >Contact Me</Button>
+            <Button variant="outline-primary" href = "mailto: jaybeatzrec@gmail.com" >Contact Me</Button>
           </Container>
         </MDBCardBody>
       </MDBCard>
