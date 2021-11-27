@@ -101,25 +101,18 @@ function BookingSystem() {
               Please provide a valid zip.
             </Form.Control.Feedback>
           </Form.Group>
-          {["radio"].map((type) => (
-            <div key={`inline-${type}`} className="mb-3">
-              <Form.Check
-                inline
-                label="Call/Text"
-                name="call"
-                type={type}
-                id={`inline-${type}-1`}
-              />
-              <Form.Check
-                inline
-                label="Email"
-                name="email-type"
-                type={type}
-                id={`inline-${type}-2`}
-              />
-             
-            </div>
-          ))}
+          <Form.Group as={Col} md="3" controlId="validationCustom07">
+            <Form.Label>Event Type</Form.Label>
+            <Form.Control
+              type="text"
+              placeholder="How to contact you? (Email,Text,Call)"
+              name="contact-type"
+              required
+            />
+            <Form.Control.Feedback type="invalid">
+              Please provide a valid zip.
+            </Form.Control.Feedback>
+          </Form.Group>
         </Row>
 
         <Container
